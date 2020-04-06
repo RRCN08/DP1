@@ -22,10 +22,10 @@ body > h3 {
 }
 
 .assam {
+  position: relative;
   display: block;
- margin-left: auto;
- margin-right: auto;
- width: auto;
+  max-width: 100%;
+  height: auto;
 }
 
 a:hover path {
