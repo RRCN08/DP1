@@ -1,1 +1,34 @@
-bleh
+body {
+    background: #191919;
+}
+
+ul li{
+    list-style-type: none;
+}
+
+header a{
+    color: #ff;
+    text-decoration: none;
+}
+
+#left-nav{
+    float: left;
+}
+
+#right-nav{
+    float: right;
+}
+
+#right-nav li{
+    display: inline-block;
+    margin: 10px;
+}
+
+path:hover {
+    cursor:pointer;
+    fill: #ffffff;
+}
+
+footer{
+    clear: both;
+}
