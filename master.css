@@ -16,9 +16,14 @@ body > h3 {
     background: #fff;
 }
 
-.districts svg{
+.districts svg {
   position: absolute;
   width: auto;
+}
+
+.dhubri svg {
+	top:100px;
+	left:100px;
 }
 
 .assam {
