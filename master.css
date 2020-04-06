@@ -16,17 +16,7 @@ body > h3 {
     background: #fff;
 }
 
-.districts svg {
-  position: absolute;
-  width: auto;
-}
 
-.assam {
-  position: relative;
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
 
 a:hover path {
 	fill: #ffffff;
