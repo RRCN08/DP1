@@ -4,26 +4,26 @@ body {
     background: #191919;
 }
 
-ul li{
+ul li {
     list-style-type: none;
 }
 
-header a{
+header a {
     font-family: 'Sen', sans-serif;
     font-weight:12;
     color: #ffffff;
     text-decoration: none;
 }
 
-#left-nav{
+#left-nav {
     float: left;
 }
 
-#right-nav{
+#right-nav {
     float: right;
 }
 
-#right-nav li{
+#right-nav li {
     display: inline-block;
     margin: 10px;
 }
@@ -33,12 +33,12 @@ path:hover {
     fill: #ffffff;
 }
 
-footer{
+footer {
     clear: both;
     text-align: center;
-    font-family: 'Sen', sans-serif;
-    padding: 10px;
-    font-weight:12;
     color: #ffffff;
+    padding: 10px;
+    font-family: 'Sen', sans-serif;
+    font-weight: 12;
     text-decoration: none;
 }
