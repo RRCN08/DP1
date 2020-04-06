@@ -1,0 +1,33 @@
+body {
+    background: #191919;
+    color: #ffffff;
+
+}
+
+h3 {
+    color: #000;
+}
+
+body h3 {
+  color: #eb0029;
+}
+
+body > h3 {
+    background: #fff;
+}
+
+.districts svg{
+  position: absolute;
+  width: auto;
+}
+
+.assam {
+  display: block;
+ margin-left: auto;
+ margin-right: auto;
+ width: auto;
+}
+
+a:hover path {
+	fill: #ffffff;
+}
