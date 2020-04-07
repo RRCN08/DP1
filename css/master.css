@@ -21,6 +21,7 @@ header a {
 
 #right-nav {
     float: right;
+    margin-right: 40px;
 }
 
 #right-nav li {
