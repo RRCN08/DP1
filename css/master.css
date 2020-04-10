@@ -1,32 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Sen&display=swap');
 
+@font-face {
+  font-family: 'Avenir-Light';
+  src: url('/font/Avenir-Light.eot');
+  src: url('/font/Avenir-Light.eot?#iefix') format('embedded-opentype'),
+       url('/font/Avenir-Light.svg#Avenir-Light') format('svg'),
+       url('/font/Avenir-Light.ttf') format('truetype'),
+       url('/font/Avenir-Light.woff') format('woff'),
+       url('/font/Avenir-Light.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
     background: #191919;
-}
-
-ul li {
-    list-style: none;
-}
-
-header a {
-    font-family: 'Sen', sans-serif;
-    font-weight:12;
-    color: #ffffff;
-    text-decoration: none;
-}
-
-#left-nav {
-    float: left;
-}
-
-#right-nav {
-    float: right;
-    margin-right: 40px;
-}
-
-#right-nav li {
-    display: inline-block;
-    margin: 10px;
+    font-family: Avenir-Light;
+    font-size: 14px;
 }
 
 path:hover {
