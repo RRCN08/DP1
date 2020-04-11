@@ -1,13 +1,16 @@
 $(document).ready(function() {
-        
+
     $('#Kokrajhar').on('click',function(){
-        $("#kokrajhar").modal("show")    });
-    
-    
-    
-    
-    
-    
-    
-    
+        $("#district").modal();
+   });
+
+     var icon = $('.play');
+     
+    icon.click(function() {
+       icon.toggleClass('active');
+       return false;
+    });
+
+
+
 });
