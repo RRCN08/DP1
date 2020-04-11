@@ -2,12 +2,12 @@
 
 @font-face {
   font-family: 'Avenir-Light';
-  src: url('/font/Avenir-Light.eot');
-  src: url('/font/Avenir-Light.eot?#iefix') format('embedded-opentype'),
-       url('/font/Avenir-Light.svg#Avenir-Light') format('svg'),
-       url('/font/Avenir-Light.ttf') format('truetype'),
-       url('/font/Avenir-Light.woff') format('woff'),
-       url('/font/Avenir-Light.woff2') format('woff2');
+  src: url('./font/Avenir-Light.eot');
+  src: url('./font/Avenir-Light.eot?#iefix') format('embedded-opentype'),
+       url('./font/Avenir-Light.svg#Avenir-Light') format('svg'),
+       url('./font/Avenir-Light.ttf') format('truetype'),
+       url('./font/Avenir-Light.woff') format('woff'),
+       url('./font/Avenir-Light.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
 }
@@ -31,4 +31,19 @@ footer {
     font-family: 'Sen', sans-serif;
     font-weight: 12;
     text-decoration: none;
+}
+
+.modal-body {
+    position:relative; /* This avoids whatever it's absolute inside of it to go off the container */
+    height: 500px; /* let's imagine that your login box height is 250px . This height needs to be added, otherwise .img-responsive will be like "Oh no, I need to be vertically aligned?! but from which value I need to be aligned??" */
+}
+
+.skokrajhar {
+    width:400px; /* This value will depend on what size you want for your loading image, let's say it's 50px */
+    height: 400px;
+    position:absolute;
+    left:50%;
+    top:50%;
+    margin-top:-200px; /* This needs to be half of the height */
+    margin-left:-200px; /* This needs to be half of the width */
 }
