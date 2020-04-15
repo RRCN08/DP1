@@ -1,5 +1,8 @@
 $(document).ready(function() {
 
+  var audio = new Audio();
+  var isPlaying = false;
+
   $('body').on('click', '.btn', function(e) {
   e.preventDefault();
 
