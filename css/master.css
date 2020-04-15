@@ -20,7 +20,7 @@ body {
 
 path:hover {
     cursor:pointer;
-    fill: #ffffff;
+    fill: #eb0029;
     transition: 0.3s;
 }
 
@@ -36,15 +36,15 @@ footer {
 
 .modal-body {
     position:relative; /* This avoids whatever it's absolute inside of it to go off the container */
-    height: 500px; /* let's imagine that your login box height is 250px . This height needs to be added, otherwise .img-responsive will be like "Oh no, I need to be vertically aligned?! but from which value I need to be aligned??" */
+    height: 700px; /* let's imagine that your login box height is 250px . This height needs to be added, otherwise .img-responsive will be like "Oh no, I need to be vertically aligned?! but from which value I need to be aligned??" */
 }
 
-.skokrajhar {
-    width:400px; /* This value will depend on what size you want for your loading image, let's say it's 50px */
-    height: 400px;
+.districtmap {
+    width:600px; /* This value will depend on what size you want for your loading image*/
+    height: 600px;
     position:absolute;
     left:50%;
     top:50%;
-    margin-top:-200px; /* This needs to be half of the height */
-    margin-left:-200px; /* This needs to be half of the width */
+    margin-top:-300px; /* This needs to be half of the height */
+    margin-left:-300px; /* This needs to be half of the width */
 }

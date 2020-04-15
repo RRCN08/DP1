@@ -11,6 +11,7 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         <link rel="stylesheet" href="./css/master.css">
         <link rel="stylesheet" href="./css/player.css">
+        <link rel="stylesheet" href="./css/audio.css">
     </head>
     <body>
         <nav class="navbar navbar-expand-lg navbar-dark bg-faded">
@@ -41,18 +42,50 @@
 
         <!-- Modal Header -->
         <div class="modal-header">
-          <h4 class="modal-title text-center w-100">Kokrajhar</h4>
+          <h4 class="modal-title text-center w-100">District</h4>
           <button type="button" class="close" data-dismiss="modal">&times;</button>
         </div>
 
         <!-- Modal body -->
         <div class="modal-body">
           <div class="container">
-            <div class="btn play">
+
+            <div class="Player1 btn play" id="Player11" style="display: none;">
              <span class="bar bar-1"></span>
              <span class="bar bar-2"></span>
-           </div>
-           <img src="./css/district/Kokrajhar.svg" class="skokrajhar" width="400px" height="auto">
+            </div>
+
+            <div class="Player2 btn play" id="Player12" style="display: none;">
+             <span class="bar bar-1"></span>
+             <span class="bar bar-2"></span>
+            </div>
+
+            <div class="Player3 btn play" id="Player13" style="display: none;">
+             <span class="bar bar-1"></span>
+             <span class="bar bar-2"></span>
+            </div>
+
+            <div class="Player4 btn play" id="Player14" style="display: none;">
+             <span class="bar bar-1"></span>
+             <span class="bar bar-2"></span>
+            </div>
+
+            <div class="Player5 btn play" id="Player15" style="display: none;">
+             <span class="bar bar-1"></span>
+             <span class="bar bar-2"></span>
+            </div>
+
+            <div class="Player6 btn play" id="Player16" style="display: none;">
+             <span class="bar bar-1"></span>
+             <span class="bar bar-2"></span>
+            </div>
+
+            <div class="Player7 btn play" id="Player17" style="display: none;">
+             <span class="bar bar-1"></span>
+             <span class="bar bar-2"></span>
+            </div>
+
+           <img src="./" class="districtmap" width="600px" height="auto">
           </div>
 
         </div>
@@ -66,10 +99,11 @@
       </div>
       </div>
 
-        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
         <script src="./js/main.js"> </script>
+        <script src="./js/player.js"> </script>
     </body>
 
 </html>

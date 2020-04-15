@@ -1,47 +1,41 @@
 $(document).ready(function() {
 
-      var audio = new Audio("./src/audio/31_Kokrajhar_gossaigaon.wav");
-      var isPlaying = false;
 
-    $('#Kokrajhar').on('click',function(){
-        $("#district").modal();
-   });
+      $('#Kokrajhar').on('click',function(){
+        var mymodal = $('#district');
+        $(".districtmap").attr("src", "./css/district/Kokrajhar.svg");
+        mymodal.find('.modal-title').text('Kokrajhar');
 
-       $('body').on('click', '.btn', function(e){
-    e.preventDefault();
+        $(".Player1").attr("style", "display: inline-block;");
+        $(".Player1").attr("id", "kokrajhar_gossaigaon");
 
-    if ( $(this).hasClass('play') ) {
-      togglePlay();
-      $(this).removeClass('play');
-      $(this).addClass('pause');
-    } else {
-      togglePlay();
-      $(this).removeClass('pause');
-      $(this).addClass('play');
-    }
+        mymodal.modal('show');
+        });
 
-    });
 
-    function togglePlay() {
-      if (isPlaying) {
-        audio.pause();
-        audio.currentTime = 0;
-      } else {
-        audio.play();
-      }
-    };
+      $('#Dhubri').on('click',function(){
+        var mymodal = $('#district');
+        $(".districtmap").attr("src", "./css/district/Dhubri.svg");
+        mymodal.find('.modal-title').text('Dhubri');
 
-    audio.onplaying = function() {
-      isPlaying = true;
-    };
-    audio.onpause = function() {
-      isPlaying = false;
-    };
+        $(".Player1").attr("style", "display: inline-block;");
+        $(".Player1").attr("id", "dhubri_bilasipara");
 
-    audio.addEventListener("ended",  function() {
-        isPlaying = false;
-          $('.btn').addClass('play').removeClass('pause');
-      });
+        $(".Player2").attr("style", "display: inline-block;");
+        $(".Player2").attr("id", "dhubri_chapar");
+
+        $(".Player3").attr("style", "display: inline-block;");
+        $(".Player3").attr("id", "dhubri_gauripur");
+
+        $(".Player4").attr("style", "display: inline-block;");
+        $(".Player4").attr("id", "dhubri_sapatgram");
+
+        $(".Player5").attr("style", "display: inline-block;");
+        $(".Player5").attr("id", "dhubri");
+
+        mymodal.modal('show');
+        });
+
 
 
 });
