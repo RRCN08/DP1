@@ -20,8 +20,14 @@ body {
 
 path:hover {
     cursor:pointer;
-    fill: #eb0029;
+    fill: #00a86b;
     transition: 0.3s;
+}
+
+#South_Salmara_Mankachar:hover {
+  cursor:pointer;
+  fill: #eb0029;
+  opacity: 0.3;
 }
 
 footer {
