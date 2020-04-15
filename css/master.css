@@ -21,6 +21,7 @@ body {
 path:hover {
     cursor:pointer;
     fill: #ffffff;
+    transition: 0.3s;
 }
 
 footer {
