@@ -1,18 +1,5 @@
 $(document).ready(function() {
 
-  var audio = new Audio();
-  var isPlaying = false;
-  var playPromise = audio.play();
-  if (playPromise !== undefined) {
-        playPromise.then(function() {
-           audio.addEventListener('timeupdate',function() {
-              console.log(audio.currentTime, audio.duration);
-           }, true);
-        }).catch(function(error) {
-              console.error('Failed to start your sound, retrying.');
-        });
-  }
-
   $('body').on('click', '.btn', function(e) {
   e.preventDefault();
 

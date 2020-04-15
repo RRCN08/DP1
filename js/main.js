@@ -7,7 +7,7 @@ $(document).ready(function() {
         mymodal.find('.modal-title').text('Kokrajhar');
 
         $(".Player1").attr("style", "display: inline-block;");
-        $(".Player1").attr("id", "kokrajhar_gossaigaon"); 
+        $(".Player1").attr("id", "Kokrajhar_gossaigaon");
 
         mymodal.modal('show');
         });
