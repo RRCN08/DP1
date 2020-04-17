@@ -119,6 +119,56 @@ $(document).ready(function() {
                   mymodal.modal('show');
                   });
 
+                  $('#Darrang').on('click',function(){
+                    var mymodal = $('#district');
+                    $(".districtmap").attr("src", "./css/district/Darrang.svg");
+                    mymodal.find('.modal-title').text('Darrang');
+
+                    $(".Player1").attr("style", "display: inline-block;");
+                    $(".Player1").attr("id", "Darrang_tangla");
+
+                    $(".Player2").attr("style", "display: inline-block;");
+                    $(".Player2").attr("id", "Darrang_mangaldoi");
+
+                    mymodal.modal('show');
+                    });
+
+                    $('#Udalguri').on('click',function(){
+                      var mymodal = $('#district');
+                      $(".districtmap").attr("src", "./css/district/Udalguri.svg");
+                      mymodal.find('.modal-title').text('Udalguri');
+
+                      $(".Player1").attr("style", "display: inline-block;");
+                      $(".Player1").attr("id", "udalguri");
+
+                      mymodal.modal('show');
+                      });
+
+
+                      $('#Morigaon').on('click',function(){
+                        var mymodal = $('#district');
+                        $(".districtmap").attr("src", "./css/district/Morigaon.svg");
+                        mymodal.find('.modal-title').text('Morigaon');
+
+                        $(".Player1").attr("style", "display: inline-block;");
+                        $(".Player1").attr("id", "morigaon");
+
+                        mymodal.modal('show');
+                        });
+
+                        $('#Hojai').on('click',function(){
+                          var mymodal = $('#district');
+                          $(".districtmap").attr("src", "./css/district/Hojai.svg");
+                          mymodal.find('.modal-title').text('Hojai');
+
+                          $(".Player1").attr("style", "display: inline-block;");
+                          $(".Player1").attr("id", "hojai");
+
+                          $(".Player2").attr("style", "display: inline-block;");
+                          $(".Player2").attr("id", "hojai_doboka");
+
+                          mymodal.modal('show');
+                          });         
 
 
 

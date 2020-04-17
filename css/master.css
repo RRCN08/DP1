@@ -24,7 +24,7 @@ path:hover {
     transition: 0.3s;
 }
 
-#South_Salmara_Mankachar:hover {
+#South_Salmara_Mankachar:hover, #Bongaigaon:hover {
   cursor:pointer;
   fill: #eb0029;
   opacity: 0.3;
