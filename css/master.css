@@ -19,15 +19,29 @@ body {
 }
 
 path:hover {
-    cursor:pointer;
-    fill: #00a86b;
-    transition: 0.3s;
-}
-
-#South_Salmara_Mankachar:hover, #Bongaigaon:hover {
   cursor:pointer;
   fill: #eb0029;
   opacity: 0.3;
+  transition: 0.3s;
+}
+
+#Brahmaputra:hover {
+  cursor:pointer;
+  fill: #194e9c;
+  opacity: 0.1;
+  transition: 0.3s;
+}
+
+#Brahmaputra {
+  pointer-events: none;
+}
+
+#Udalguri:hover, #Barpeta:hover, #Biswanath:hover, #Charaideo:hover, #Chirang:hover, #Darrang:hover, #Dhemaji:hover, #Dhubri:hover, #Dibrugarh:hover, #Goalpara:hover,
+#Golaghat:hover, #Hojai:hover, #Jorhat:hover, #Kamrup:hover, #Karbi_Anglong:hover, #Kokrajhar:hover, #Lakhimpur:hover, #Morigaon:hover, #Nagaon:hover, #Nalbari:hover,
+#Sivasagar:hover, #Sonitpur:hover, #Tinsukia:hover {
+    cursor:pointer;
+    fill: #00a86b;
+    transition: 0.3s;
 }
 
 footer {
