@@ -10,7 +10,7 @@
           align-items: center;
 }
 
-.btn {
+.audiobtn {
   position: relative;
   width: 30px;
   height: 30px;
@@ -23,13 +23,13 @@
   z-index: 1;
 }
 
-.btn:hover {
+.audiobtn:hover {
   border: #eb0029 3px solid;
 }
-.btn:hover .bar {
+.audiobtn:hover .bar {
   background-color: #eb0029;
 }
-.btn .bar {
+.audiobtn .bar {
   display: inline-block;
   position: absolute;
   top: 9.4px;
@@ -43,15 +43,15 @@
   transition: transform 0.4s ease-in-out, background 0.1s ease-in-out;
   transition: transform 0.4s ease-in-out, background 0.1s ease-in-out, -webkit-transform 0.4s ease-in-out;
 }
-.btn.pause .bar-1 {
+.audiobtn.pause .bar-1 {
           transform: translateX(11px) translateY(-4px) rotate(0deg);
 }
-.btn.pause .bar-2 {
+.audiobtn.pause .bar-2 {
           transform: translateX(18px) translateY(-4px) rotate(0deg);
 }
-.btn.play .bar-1 {
+.audiobtn.play .bar-1 {
           transform: translateX(15px) translateY(-7.5px) rotate(-55deg);
 }
-.btn.play .bar-2 {
+.audiobtn.play .bar-2 {
           transform: translateX(15px) translateY(-0.8px) rotate(-125deg);
 }

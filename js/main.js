@@ -1,6 +1,13 @@
 $(document).ready(function() {
 
 
+      $('#start').on('click',function(){
+        $('#intro').fadeOut('slow', function(){
+        $('#assam').fadeIn('slow');
+        $("#intro").attr("style", "display: none;");
+        });
+      });
+
       $('#Kokrajhar').on('click',function(){
         var mymodal = $('#district');
         $(".districtmap").attr("src", "./css/district/Kokrajhar.svg");
@@ -81,6 +88,9 @@ $(document).ready(function() {
         $(".Player4").attr("style", "display: inline-block;");
         $(".Player4").attr("id", "barpeta");
 
+        $(".Player5").attr("style", "display: inline-block;");
+        $(".Player5").attr("id", "barpeta_pathsala");
+
         mymodal.modal('show');
         });
 
@@ -109,19 +119,24 @@ $(document).ready(function() {
         $(".Player1").attr("id", "kamrup_rangia");
 
         $(".Player2").attr("style", "display: inline-block;");
-        $(".Player2").attr("id", "Kamrup_pathsala");
+        $(".Player2").attr("id", "kamrup_palasbari");
 
         $(".Player3").attr("style", "display: inline-block;");
-        $(".Player3").attr("id", "kamrup_palasbari");
-
-        $(".Player4").attr("style", "display: inline-block;");
-        $(".Player4").attr("id", "kamrup_guwahati");
-
-        $(".Player5").attr("style", "display: inline-block;");
-        $(".Player5").attr("id", "Kamrup_dharapur");
+        $(".Player3").attr("id", "Kamrup_dharapur");
 
         mymodal.modal('show');
         });
+
+        $('#Kamrup_Metro').on('click',function(){
+          var mymodal = $('#district');
+          $(".districtmap").attr("src", "./css/district/Kamrup_Metro.svg");
+          mymodal.find('.modal-title').text('Kamrup Metro');
+
+          $(".Player4").attr("style", "display: inline-block;");
+          $(".Player4").attr("id", "kamrup_guwahati");
+
+          mymodal.modal('show');
+          });
 
 
       $('#Darrang').on('click',function(){
@@ -130,10 +145,7 @@ $(document).ready(function() {
         mymodal.find('.modal-title').text('Darrang');
 
         $(".Player1").attr("style", "display: inline-block;");
-        $(".Player1").attr("id", "Darrang_tangla");
-
-        $(".Player2").attr("style", "display: inline-block;");
-        $(".Player2").attr("id", "Darrang_mangaldoi");
+        $(".Player1").attr("id", "Darrang_mangaldoi");
 
         mymodal.modal('show');
         });
@@ -146,6 +158,9 @@ $(document).ready(function() {
 
         $(".Player1").attr("style", "display: inline-block;");
         $(".Player1").attr("id", "udalguri");
+
+        $(".Player2").attr("style", "display: inline-block;");
+        $(".Player2").attr("id", "udalguri_tangla");
 
         mymodal.modal('show');
         });

@@ -3,14 +3,14 @@ $(document).ready(function() {
   var audio = new Audio();
   var isPlaying = false;
 
-  $('body').on('click', '.btn', function(e) {
+  $('body').on('click', '.audiobtn', function(e) {
   e.preventDefault();
 
   if (isPlaying && $(this).hasClass('play')) {
    audio.pause();
    audio.currentTime = 0;
    isPlaying = false;
-     $('.btn').addClass('play').removeClass('pause');
+     $('.audiobtn').addClass('play').removeClass('pause');
   }
 
 
@@ -37,9 +37,9 @@ $(document).ready(function() {
       this.currentTime = 0;
     });
 
-    $(".btn").attr("style", "display: none;");
-    $(".btn").removeClass('pause');
-    $(".btn").addClass('play');
+    $(".audiobtn").attr("style", "display: none;");
+    $(".audiobtn").removeClass('pause');
+    $(".audiobtn").addClass('play');
 
   });
 
@@ -63,7 +63,7 @@ $(document).ready(function() {
 
   audio.addEventListener("ended",  function() {
    isPlaying = false;
-     $('.btn').addClass('play').removeClass('pause');
+     $('.audiobtn').addClass('play').removeClass('pause');
    });
 
 

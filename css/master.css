@@ -18,6 +18,41 @@ body {
     font-size: 14px;
 }
 
+p {
+  font-family: Avenir-Light;
+  font-size: 14px;
+  color: white;
+}
+
+h1 {
+  font-family: Avenir-Light;
+  color: white;
+}
+
+.btn {
+  position: relative;
+  border: #eb0029 3px solid;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: border 0.1s ease-in-out;
+  z-index: 1;
+  color: #fff;
+}
+
+.vertical-center {
+  min-height: 70vh; /* These two lines are counted as one :-)       */
+  display: flex;
+  align-items: center;
+}
+
+
+.btn-outline:hover, .btn-outline:focus, .btn-outline:active, .btn-outline.active {
+  color: 191919;
+  border-color: #eb0029;
+  background-color: #eb0029;
+  transition: all .35s;
+}
+
 path:hover {
   cursor:pointer;
   fill: #eb0029;
@@ -32,26 +67,12 @@ path:hover {
   transition: 0.3s;
 }
 
-#Brahmaputra {
-  pointer-events: none;
-}
-
 #Udalguri:hover, #Barpeta:hover, #Biswanath:hover, #Charaideo:hover, #Chirang:hover, #Darrang:hover, #Dhemaji:hover, #Dhubri:hover, #Dibrugarh:hover, #Goalpara:hover,
-#Golaghat:hover, #Hojai:hover, #Jorhat:hover, #Kamrup:hover, #Karbi_Anglong:hover, #Kokrajhar:hover, #Lakhimpur:hover, #Morigaon:hover, #Nagaon:hover, #Nalbari:hover,
+#Golaghat:hover, #Hojai:hover, #Jorhat:hover, #Kamrup:hover, #Kamrup_Metro:hover, #Karbi_Anglong:hover, #Kokrajhar:hover, #Lakhimpur:hover, #Morigaon:hover, #Nagaon:hover, #Nalbari:hover,
 #Sivasagar:hover, #Sonitpur:hover, #Tinsukia:hover {
     cursor:pointer;
     fill: #00a86b;
     transition: 0.3s;
-}
-
-footer {
-    clear: both;
-    text-align: center;
-    color: #ffffff;
-    padding: 10px;
-    font-family: 'Sen', sans-serif;
-    font-weight: 12;
-    text-decoration: none;
 }
 
 .modal-body {
