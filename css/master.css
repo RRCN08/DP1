@@ -45,6 +45,33 @@ h1 {
   align-items: center;
 }
 
+label {
+      margin-bottom: -0.5rem;
+}
+
+.modal-backdrop {
+     opacity:0.9 !important;
+}
+
+.modal-content {
+  background-color: rgba(0,0,0,.0001) !important;
+}
+
+.modal-header {
+  color: white !important;
+}
+
+.close {
+    color: #fff;
+    opacity: 1;
+    text-shadow: 0px 0px 0px !important;
+}
+
+.close:hover {
+    color: #eb0029;
+    opacity: 1;
+}
+
 .footer {
   position: fixed;
   left: 0;
@@ -87,6 +114,10 @@ h1 {
 svg:hover {
     color: #eb0029;
     transition: 0.3s;
+  }
+
+.popover {
+    text-align: center;
   }
 
 .modal-body.dist1 {
