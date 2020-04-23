@@ -2,9 +2,11 @@
 <html>
     <head profile="http://www.w3.org/2005/10/profile">
         <link rel="icon" type="image/svg" href="./css/Asset 2.svg">
-        <title>Soundsslike Redesign - DP1</title>
+        <title>Dhvani - Vowel Variation Representation</title>
         <meta charset="utf-8">
-        <meta name="description" content="This is a redesign project of The Soundsslike Project. I have represented the various dialects of Assamese across the state in an apt way. Feel free to play around."/>
+        <meta name="description" content="Dhvani is my first semester thesis project which depicts the variation of different dialects of the Assamese language across the state.
+        This has been achieved by collecting speech data from native speakers of Assamese from various geographical locations in Assam and subsequently
+        analyzing the speech data by means of acoustic analysis."/>
         <meta name="keywords" content="dp1,rohit,design,project,soundsslike"/>
         <meta name="author" content="Rohit Ramachandran"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no"/>
@@ -32,9 +34,9 @@
         </nav>
 
           <div class="container d-flex h-100 vertical-center">
-            <div class="row h-100 align-self-center">
+            <div class="row h-100 align-self-center" id="intro">
               <div class="col-lg-11 my-auto">
-                <div class="header-content mx-auto" id="intro">
+                <div class="header-content mx-auto">
                   <h1 class="mb-5">Dhvani - Vowel Variation Representation <br> </h1>
                      <p> Dhvani is my first semester thesis project which depicts the variation of different dialects of the Assamese language across the state.
                      This has been achieved by collecting speech data from native speakers of Assamese from various geographical locations in Assam and subsequently
@@ -45,7 +47,7 @@
             </div>
           </div>
 
-      <div class="container" id="assam" style="display: none;">
+      <div class="container assam" style="display: none;">
 
         <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
            viewBox="0 0 1344.8 934.2" style="enable-background:new 0 0 1344.8 934.2;" xml:space="preserve">
@@ -625,7 +627,18 @@
           c4-1.5,6.7-4.6,11.1-4.9c4.9-0.3,7.4-1.1,11.2-4.5C977,255.7,984.3,261.5,993.3,261.3"/>
         </svg>
 
+          <footer class="footer">
+    <div class="container">
+      <span class="text-muted">This map is not scalable.</span>
+    </div>
+    </footer>
+        </div>
+
       </div>
+
+      <span class="assam" id="gear" style="color: #fff; opacity: 0.8; display: none;">
+        <i class="fas fa-sliders-h fa-2x float-right mr-5"></i>
+      </span>
 
       <!-- Modal -->
       <div class="modal fade" id="district">
@@ -639,7 +652,7 @@
         </div>
 
         <!-- Modal body -->
-        <div class="modal-body">
+        <div class="modal-body dist1">
           <div class="container">
 
             <div class="Player1 audiobtn play" id="Player11" style="display: none;">
@@ -677,7 +690,7 @@
              <span class="bar bar-2"></span>
             </div>
 
-           <img src="./" class="districtmap" width="600px" height="auto">
+           <img src="./" class="districtmap img-responsive" width="600px" height="auto">
           </div>
 
         </div>
@@ -691,13 +704,38 @@
       </div>
       </div>
 
-            
+
+      <!-- Modal -->
+      <div class="modal fade" id="settings">
+      <div class="modal-dialog modal-dialog-centered modal-sm">
+      <div class="modal-content">
+
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title text-center w-100">Settings</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+
+        <!-- Modal body -->
+        <div class="modal-body">
+          <div class="container">
+
+
+
+          </div>
+
+        </div>
+
+      </div>
+      </div>
+      </div>
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-        <script src="./js/main.js"> </script>
-        <script src="./js/player.js"> </script>
+        <script src="https://kit.fontawesome.com/d0614f870e.js" crossorigin="anonymous"></script>
+        <script src="./js/main.js"></script>
+        <script src="./js/player.js"></script>
     </body>
 
 </html>

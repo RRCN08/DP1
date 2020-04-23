@@ -3,10 +3,16 @@ $(document).ready(function() {
 
       $('#start').on('click',function(){
         $('#intro').fadeOut('slow', function(){
-        $('#assam').fadeIn('slow');
+        $('.assam').fadeIn('slow');
         $("#intro").attr("style", "display: none;");
         });
       });
+
+      $('#gear').on('click',function(){
+        console.log("click");
+        var mymodal = $('#settings');
+        mymodal.modal('show');
+        });
 
       $('#Kokrajhar').on('click',function(){
         var mymodal = $('#district');

@@ -45,6 +45,14 @@ h1 {
   align-items: center;
 }
 
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  text-align: center;
+}
 
 .btn-outline:hover, .btn-outline:focus, .btn-outline:active, .btn-outline.active {
   color: 191919;
@@ -53,7 +61,8 @@ h1 {
   transition: all .35s;
 }
 
-path:hover {
+#South_Salmara_Mankachar:hover, #Bongaigaon:hover, #Maksa:hover, #Cachar:hover, #Hailakandi:hover, #Karimganj:hover, #Karbi_Anglong_West:hover, #Dima_Hassao:hover,
+#Majuli:hover {
   cursor:pointer;
   fill: #eb0029;
   opacity: 0.3;
@@ -75,7 +84,12 @@ path:hover {
     transition: 0.3s;
 }
 
-.modal-body {
+svg:hover {
+    color: #eb0029;
+    transition: 0.3s;
+  }
+
+.modal-body.dist1 {
     position:relative; /* This avoids whatever it's absolute inside of it to go off the container */
     height: 700px; /* let's imagine that your login box height is 250px . This height needs to be added, otherwise .img-responsive will be like "Oh no, I need to be vertically aligned?! but from which value I need to be aligned??" */
 }
