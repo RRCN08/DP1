@@ -61,6 +61,20 @@ label {
   color: white !important;
 }
 
+.popover {
+  font-family: Avenir-Light;
+  color: white;
+  background-color: #000;
+}
+
+.popover-body {
+      color: #fff;
+}
+
+.popover-header {
+    background-color: #000;
+}
+
 .close {
     color: #fff;
     opacity: 1;
