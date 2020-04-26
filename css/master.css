@@ -39,10 +39,33 @@ h1 {
   color: #fff;
 }
 
+.threebtn {
+  position: relative;
+  border: #eb0029 1px solid;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: border 0.1s ease-in-out;
+  z-index: 1;
+  color: #fff;
+}
+
 .vertical-center {
-  min-height: 90vh; /* These two lines are counted as one :-)       */
+  min-height: 80vh; /* These two lines are counted as one :-)       */
   display: flex;
   align-items: center;
+}
+
+#varieties {
+  display: flex;
+  justify-content: center;
+}
+
+#buttongroup {
+  right: 50px;
+}
+
+#recordings {
+  width: 93%;
 }
 
 label {
@@ -64,7 +87,7 @@ label {
 .popover {
   font-family: Avenir-Light;
   color: white;
-  background-color: #000;
+  background-color: rgba(0,0,0,.0001);
 }
 
 .popover-body {
@@ -72,7 +95,7 @@ label {
 }
 
 .popover-header {
-    background-color: #000;
+    background-color: rgba(0,0,0,.0001);
 }
 
 .close {
@@ -102,10 +125,19 @@ label {
   transition: all .35s;
 }
 
+#info:hover, #gear:hover {
+  fill: #eb0029;
+  transition: 0.3s;
+}
+
+.popover .arrow {
+    display: none;
+}
+
 #South_Salmara_Mankachar:hover, #Bongaigaon:hover, #Maksa:hover, #Cachar:hover, #Hailakandi:hover, #Karimganj:hover, #Karbi_Anglong_West:hover, #Dima_Hassao:hover,
 #Majuli:hover {
   cursor:pointer;
-  fill: #eb0029;
+  fill: #fff;
   opacity: 0.3;
   transition: 0.3s;
 }
@@ -117,12 +149,23 @@ label {
   transition: 0.3s;
 }
 
-#Udalguri:hover, #Barpeta:hover, #Biswanath:hover, #Charaideo:hover, #Chirang:hover, #Darrang:hover, #Dhemaji:hover, #Dhubri:hover, #Dibrugarh:hover, #Goalpara:hover,
-#Golaghat:hover, #Hojai:hover, #Jorhat:hover, #Kamrup:hover, #Kamrup_Metro:hover, #Karbi_Anglong:hover, #Kokrajhar:hover, #Lakhimpur:hover, #Morigaon:hover, #Nagaon:hover, #Nalbari:hover,
-#Sivasagar:hover, #Sonitpur:hover, #Tinsukia:hover {
+#Udalguri:hover, #Barpeta:hover,   #Chirang:hover, #Darrang:hover,  #Dhubri:hover,  #Goalpara:hover, #Kamrup:hover,
+#Kamrup_Metro:hover,  #Kokrajhar:hover, #Nalbari:hover {
     cursor:pointer;
-    fill: #00a86b;
+    fill: #ff6cd8;
     transition: 0.3s;
+}
+
+#Sonitpur:hover, #Biswanath:hover, #Golaghat:hover, #Morigaon:hover, #Nagaon:hover, #Karbi_Anglong:hover, #Hojai:hover {
+  cursor:pointer;
+  fill: #ff4d34;
+  transition: 0.3s;
+}
+
+#Lakhimpur:hover, #Sivasagar:hover, #Tinsukia:hover, #Dibrugarh:hover, #Dhemaji:hover, #Charaideo:hover, #Jorhat:hover {
+  cursor:pointer;
+  fill: #ffc721;
+  transition: 0.3s;
 }
 
 svg:hover {

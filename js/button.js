@@ -28,6 +28,13 @@ $(document).ready(function() {
         });
       });
 
+      $('#info').on('click',function(){
+        $('.assam').fadeOut('slow', function(){
+        $('#intro').fadeIn('slow');
+        $('.assam').attr("style", "display: none;");
+        });
+      });
+
 
 
       $('#gear').popover({
