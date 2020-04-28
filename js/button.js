@@ -24,16 +24,33 @@ $(document).ready(function() {
       $('#start').on('click',function(){
         $('#intro').fadeOut('slow', function(){
         $('.assam').fadeIn('slow');
-        $('#intro').attr("style", "display: none;");
+        $('.recordings').fadeIn('slow');
+        $('#recordingsbtn').attr("style", "color: #fff; background-color: #eb0029;");
         });
       });
 
       $('#info').on('click',function(){
-        $('.assam').fadeOut('slow', function(){
-        $('#intro').fadeIn('slow');
-        $('.assam').attr("style", "display: none;");
+        $('.main').fadeOut('slow', function(){
+        $('.assam').fadeOut('slow');
+        });
+        $('#intro').delay(600).fadeIn('slow');
+      });
+
+      $('#varietiesbtn').on('click',function(){
+        $('.recordings').fadeOut('slow', function(){
+          
+          $('.varieties').fadeIn('slow');
         });
       });
+
+      $('#recordingsbtn').on('click',function(){
+        $('.varieties').fadeOut('slow', function(){
+
+          $('.recordings').fadeIn('slow');
+        });
+      });
+
+
 
 
 
