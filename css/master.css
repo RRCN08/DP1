@@ -31,7 +31,7 @@ h1, h2, h3, h4 {
 
 .btn {
   position: relative;
-  border: #eb0029 3px solid;
+  border: 3px solid;
   border-radius: 3px;
   cursor: pointer;
   transition: border 0.1s ease-in-out;
@@ -40,31 +40,34 @@ h1, h2, h3, h4 {
 }
 
 .threebtn {
-  position: relative;
-  border: #eb0029 1px solid;
+  border: 1px solid;
   border-radius: 8px;
-  cursor: pointer;
-  transition: border 0.1s ease-in-out;
-  z-index: 1;
-  color: #fff;
 }
 
 .btngrid {
-  position: relative;
   height: 60px;
   min-width: 150px;
-  border: #eb0029 1px solid;
+  border: #358873 1px solid;
   border-radius: 8px;
-  cursor: pointer;
-  transition: border 0.1s ease-in-out;
-  z-index: 1;
-  color: #fff;
+  margin: -0.5px;
+}
+
+.btn-outliner {
+  border: 1px #eb0029 solid;
+}
+
+.btn-outlineg {
+  border: 1px #358873 solid;
+}
+
+.btn-outlineb {
+  border: 1px #2866c1 solid;
 }
 
 .btn12 {
-  position: fixed !important;
-    top: 20%;
-    left: 50%;
+  position: absolute !important;
+    top: 60%;
+    left: 72%;
 }
 
 .vertical-center {
@@ -134,9 +137,21 @@ label {
   text-align: center;
 }
 
-.btn-outline:hover, .btn-outline:focus, .btn-outline:active, .btn-outline.active {
+.btn-outliner:hover, .btn-outliner:focus, .btn-outliner:active, .btn-outliner.active {
   border-color: #eb0029;
   background-color: #eb0029;
+  transition: all .35s;
+}
+
+.btn-outlineg:hover, .btn-outlineg:focus, .btn-outlineg:active, .btn-outlineg.active {
+  border-color: #358873;
+  background-color: #358873;
+  transition: all .35s;
+}
+
+.btn-outlineb:hover, .btn-outlineb:focus, .btn-outlineb:active, .btn-outlineb.active {
+  border-color: #2866c1;
+  background-color: #2866c1;
   transition: all .35s;
 }
 
@@ -184,8 +199,8 @@ label {
 }
 
 
-svg:hover {
-    color: #eb0029;
+#info:hover, #gear:hover {
+    fill: #ffc721;
     transition: 0.3s;
   }
 
@@ -209,26 +224,41 @@ svg:hover {
 }
 
 .hundred {
-  fill: #eb0029 !important;
+  fill: #207567 !important;
   transition: 1s;
 }
 
 .eighty {
-  fill: blue !important;
+  fill: #4e9c81 !important;
   transition: 1s;
 }
 
 .sixty {
-  fill: green !important;
+  fill: #8dc3a7 !important;
   transition: 1s;
 }
 
 .forty {
-  fill: pink !important;
+  fill: #b4d6c1 !important;
   transition: 1s;
 }
 
 .twenty {
-  fill: white !important;
+  fill: #dfeae2 !important;
   transition: 1s;
+}
+
+.recordings, .lexicals {
+  width: 93%;
+}
+
+@media only screen and (max-width: 768px) {
+  .btn12 {
+    position: relative !important;
+top: 0%;
+left: 0%;}
+
+.recordings {
+      width: 80% !important;
+}
 }

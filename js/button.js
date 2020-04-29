@@ -33,6 +33,9 @@ $(document).ready(function() {
         $('.assam').fadeOut('slow');
         });
         $('#intro').delay(600).fadeIn('slow');
+        $("#recordingsbtn").addClass("active");
+        $("#lexicalsbtn").removeClass("active");
+        $("#varietiesbtn").removeClass("active");
       });
 
       $('#varietiesbtn').on('click',function(){
@@ -51,6 +54,10 @@ $(document).ready(function() {
         }
 
         $(this).addClass("active");
+        $('.btn').removeClass("btn-outliner");
+        $('.btn').removeClass("btn-outlineg");
+        $('.btn').addClass("btn-outlineb");
+
       });
 
       $('#recordingsbtn').on('click',function(){
@@ -69,6 +76,9 @@ $(document).ready(function() {
         }
 
         $(this).addClass("active");
+        $('.btn').removeClass("btn-outlineg");
+        $('.btn').removeClass("btn-outlineb");
+        $('.btn').addClass("btn-outliner");
       });
 
       $('#lexicalsbtn').on('click',function(){
@@ -88,6 +98,9 @@ $(document).ready(function() {
         }
 
         $(this).addClass("active");
+        $('.btn').removeClass("btn-outliner");
+        $('.btn').removeClass("btn-outlineb");
+        $('.btn').addClass("btn-outlineg");
       });
 
 
