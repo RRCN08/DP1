@@ -24,7 +24,7 @@ p {
   color: white;
 }
 
-h1 {
+h1, h2, h3, h4 {
   font-family: Avenir-Light;
   color: white;
 }
@@ -47,6 +47,24 @@ h1 {
   transition: border 0.1s ease-in-out;
   z-index: 1;
   color: #fff;
+}
+
+.btngrid {
+  position: relative;
+  height: 60px;
+  min-width: 150px;
+  border: #eb0029 1px solid;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: border 0.1s ease-in-out;
+  z-index: 1;
+  color: #fff;
+}
+
+.btn12 {
+  position: fixed !important;
+    top: 20%;
+    left: 50%;
 }
 
 .vertical-center {
@@ -188,4 +206,29 @@ svg:hover {
     top:50%;
     margin-top:-300px; /* This needs to be half of the height */
     margin-left:-300px; /* This needs to be half of the width */
+}
+
+.hundred {
+  fill: #eb0029 !important;
+  transition: 1s;
+}
+
+.eighty {
+  fill: blue !important;
+  transition: 1s;
+}
+
+.sixty {
+  fill: green !important;
+  transition: 1s;
+}
+
+.forty {
+  fill: pink !important;
+  transition: 1s;
+}
+
+.twenty {
+  fill: white !important;
+  transition: 1s;
 }

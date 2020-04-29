@@ -7,12 +7,12 @@ function BrahmaToggle() {
   // If the checkbox is checked, display the output text
   if (checkBox.checked == true){
       BrahmaT = 1;
-      $('#Brahmaputra').fadeIn('slow', function(){
-      $('#Brahmaputra').attr("style", "display: inline-block;"); });
+      $('.st5').fadeIn('slow', function(){
+      $('.st5').attr("style", "display: inline-block;"); });
   } else {
     BrahmaT = 0;
-    $('#Brahmaputra').fadeOut('slow', function(){
-    $('#Brahmaputra').attr("style", "display: none;"); });
+    $('.st5').fadeOut('slow', function(){
+    $('.st5').attr("style", "display: none;"); });
   }
 }
 
@@ -25,7 +25,6 @@ $(document).ready(function() {
         $('#intro').fadeOut('slow', function(){
         $('.assam').fadeIn('slow');
         $('.recordings').fadeIn('slow');
-        $('#recordingsbtn').attr("style", "color: #fff; background-color: #eb0029;");
         });
       });
 
@@ -37,21 +36,59 @@ $(document).ready(function() {
       });
 
       $('#varietiesbtn').on('click',function(){
-        $('.recordings').fadeOut('slow', function(){
-          
+        if ( $("#recordingsbtn").hasClass( "active" ) ) {
+          $('.recordings').fadeOut('slow', function(){
           $('.varieties').fadeIn('slow');
-        });
+          $("#recordingsbtn").removeClass("active");
+          });
+        }
+
+        else {
+          $('.lexicals').fadeOut('slow', function(){
+          $('.varieties').fadeIn('slow');
+          $("#lexicalsbtn").removeClass("active");
+          });
+        }
+
+        $(this).addClass("active");
       });
 
       $('#recordingsbtn').on('click',function(){
-        $('.varieties').fadeOut('slow', function(){
-
+        if ( $("#varietiesbtn").hasClass( "active" ) ) {
+          $('.varieties').fadeOut('slow', function(){
           $('.recordings').fadeIn('slow');
-        });
+          $("#varietiesbtn").removeClass("active");
+          });
+        }
+
+        else {
+          $('.lexicals').fadeOut('slow', function(){
+          $('.recordings').fadeIn('slow');
+          $("#lexicalsbtn").removeClass("active");
+          });
+        }
+
+        $(this).addClass("active");
       });
 
+      $('#lexicalsbtn').on('click',function(){
 
+        if ( $("#varietiesbtn").hasClass( "active" )) {
+          $('.varieties').fadeOut('slow', function(){
+          $('.lexicals').fadeIn('slow');
+          $("#varietiesbtn").removeClass("active");
+          });
+        }
 
+        else {
+          $('.recordings').fadeOut('slow', function(){
+          $('.lexicals').fadeIn('slow');
+          $("#recordingsbtn").removeClass("active");
+          });
+        }
+
+        $(this).addClass("active");
+      });
 
 
       $('#gear').popover({
