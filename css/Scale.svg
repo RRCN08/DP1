@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 121.98 1000">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #dfeae2;
+      }
+
+      .cls-2 {
+        fill: #b4d6c1;
+      }
+
+      .cls-3 {
+        fill: #8dc3a7;
+      }
+
+      .cls-4 {
+        fill: #4e9c81;
+      }
+
+      .cls-5 {
+        fill: #207567;
+      }
+
+      .cls-6, .cls-7 {
+        fill: none;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-6 {
+        stroke: #000;
+      }
+
+      .cls-7 {
+        stroke: #fff;
+      }
+
+      .cls-8 {
+        font-size: 25px;
+        fill: #fff;
+        font-family: Avenir-Light, Avenir;
+        font-weight: 300;
+      }
+    </style>
+  </defs>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="Layer_1-2" data-name="Layer 1">
+      <rect class="cls-1" y="800" width="50" height="200"/>
+      <rect class="cls-2" y="600" width="50" height="200"/>
+      <rect class="cls-3" y="400" width="50" height="200"/>
+      <rect class="cls-4" y="200" width="50" height="200"/>
+      <rect class="cls-5" width="50" height="200"/>
+      <line class="cls-6" x1="24.5" x2="24.5" y2="1000"/>
+      <line class="cls-7" x1="0.7" y1="999.5" x2="89" y2="999.5"/>
+      <line class="cls-7" x1="0.7" y1="799.5" x2="89" y2="799.5"/>
+      <line class="cls-7" x1="0.7" y1="599.5" x2="89" y2="599.5"/>
+      <line class="cls-7" x1="0.7" y1="400.5" x2="89" y2="400.5"/>
+      <line class="cls-7" x1="0.7" y1="200.5" x2="89" y2="200.5"/>
+      <line class="cls-7" y1="0.5" x2="88.3" y2="0.5"/>
+      <text class="cls-8" transform="translate(59.17 27.94)">100%</text>
+      <text class="cls-8" transform="translate(65.67 225.94)">80%</text>
+      <text class="cls-8" transform="translate(66.67 425.94)">60%</text>
+      <text class="cls-8" transform="translate(65.67 592.94)">40%</text>
+      <text class="cls-8" transform="translate(63.67 792.94)">20%</text>
+      <text class="cls-8" transform="translate(72.17 992.94)">0%</text>
+    </g>
+  </g>
+</svg>
