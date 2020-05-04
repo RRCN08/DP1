@@ -71,15 +71,11 @@ h1, h2, h3, h4 {
 }
 
 .vertical-center {
-  min-height: 90vh; /* These two lines are counted as one :-)       */
+  min-height: 100vh; /* These two lines are counted as one :-)       */
   display: flex;
   align-items: center;
 }
 
-
-#buttongroup {
-  right: 50px;
-}
 
 .varietiesmap {
   position: fixed;
@@ -250,6 +246,10 @@ label {
 
 .recordings, .lexicals {
   width: 93%;
+}
+
+.st13 {
+ pointer-events: none;
 }
 
 @media only screen and (max-width: 768px) {

@@ -1,6 +1,7 @@
 $(document).ready(function() {
 
       function flushdist() {
+        $('.lexicalscale').attr("style", "display: inline-block;");
         $(".st31").removeClass("hundred");
         $(".st31").removeClass("eighty");
         $(".st31").removeClass("sixty");
