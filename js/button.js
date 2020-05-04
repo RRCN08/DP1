@@ -125,7 +125,7 @@ $(document).ready(function() {
           }).fadeIn();
 
         $("#desc1").fadeOut(function() {
-          $(this).html("To find out the variation of words amongst the different dialects, native terms for 12 items were elicited from the speakers. These terms are arranged in the map. <br><br> To see the distribution, click on a term below.")
+          $(this).html("To find out the variation of words amongst the different dialects, native terms for 12 items were elicited from the speakers. <br><br> To see the distribution of these words on the map, click on a term below.")
           }).fadeIn();
       });
 
