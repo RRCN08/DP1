@@ -66,7 +66,7 @@ $(document).ready(function() {
           }).fadeIn();
 
         $("#desc1").fadeOut(function() {
-          $(this).html("Although Assamese can be divided mainly into 3 kinds - Western, Eastern, and Central, our respondents have identified as much as 10 different varieties. We also asked them how proud of they are of their language on a scale from 1-5.<br>Hover on a region to see what we found.")
+          $(this).html("Although Assamese can be divided mainly into 3 kinds - Western, Eastern, and Central, our respondents have identified as much as 10 different varieties. We also asked them how proud of they are of their language. Hover on a region to see what we found.")
           }).fadeIn();
 
       });

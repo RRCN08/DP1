@@ -80,6 +80,7 @@ h1, h2, h3, h4 {
 
 
 .varietiesmap {
+  width: 37%;
   position: absolute;
     right: -20%;
     bottom: 20%;
@@ -248,4 +249,14 @@ label {
 
 .st13 {
  pointer-events: none;
+}
+
+#termsbtn {
+  position: absolute; top: 60%; right: 25%;
+
+}
+
+@media only screen and (max-width: 600px) {
+  #termsbtn{ position: relative; top: 0%; right: 0%; margin-top: 5%;}
+  .varietiesmap { position: relative; right: 0%; bottom: 0%; margin-top: 5%; width: auto;}
 }
