@@ -21,6 +21,7 @@ $(document).ready(function() {
 
       $('#start').on('click',function(){
         $('#intro').fadeOut('slow', function(){
+        $('#intro').attr("style", "display: none;");
         $('.assam').fadeIn('slow');
         $('.recordings').fadeIn('slow');
         });
@@ -65,7 +66,7 @@ $(document).ready(function() {
           }).fadeIn();
 
         $("#desc1").fadeOut(function() {
-          $(this).html("Although Assamese can be divided mainly into 3 kinds - Western, Eastern, and Central, our respondents have identified as much as 10 different varieties. We also asked them how proud of they are of their language on a scale from 1-5.<br><br>Hover on a region to see what we found.")
+          $(this).html("Although Assamese can be divided mainly into 3 kinds - Western, Eastern, and Central, our respondents have identified as much as 10 different varieties. We also asked them how proud of they are of their language on a scale from 1-5.<br>Hover on a region to see what we found.")
           }).fadeIn();
 
       });
@@ -91,11 +92,11 @@ $(document).ready(function() {
         $('.btn').addClass("btn-outliner");
 
         $("#head1").fadeOut(function() {
-          $(this).text("Welcome")
+          $(this).html("Welcome<br>")
           }).fadeIn();
 
         $("#desc1").fadeOut(function() {
-          $(this).html("We have compiled audio recordings from 60 people across Assam, from west to east, in a search of <br>the different dialects of the Assamese language. <br><br>To start listening to recordings of various speakers, click on a district.")
+          $(this).html("We have compiled audio recordings from 60 people across Assam, from west to east, in a search of the different dialects of the Assamese language. <br>To start listening to recordings of various speakers, click on a district.</p>")
           }).fadeIn();
       });
 
@@ -121,11 +122,11 @@ $(document).ready(function() {
         $('.btn').addClass("btn-outlineg");
 
         $("#head1").fadeOut(function() {
-          $(this).text("Word Distribution")
+          $(this).html("Word Distribution<br>")
           }).fadeIn();
 
         $("#desc1").fadeOut(function() {
-          $(this).html("To find out the variation of words amongst the different dialects, native terms for 12 items were elicited from the speakers. <br><br> To see the distribution of these words on the map, click on a term below.")
+          $(this).html("We have compiled audio recordings from 60 people across Assam, from west to east, in a search of the different dialects of the Assamese language.  To start listening to recordings of various speakers, click on a district.")
           }).fadeIn();
       });
 

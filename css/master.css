@@ -13,7 +13,10 @@
 }
 
 body {
-    background: #191919;
+    /* background-image: url("./bg.png"); */
+    background-color: #191919;
+    background-repeat: no-repeat;
+    background-size: auto;
     font-family: Avenir-Light;
     font-size: 14px;
 }
@@ -65,9 +68,8 @@ h1, h2, h3, h4 {
 }
 
 .btn12 {
-  position: absolute !important;
-  top: 50%;
-  left: 85%;
+  position: absolute;
+  margin: 17% 0% 0% 45%;
 }
 
 .vertical-center {
@@ -78,9 +80,9 @@ h1, h2, h3, h4 {
 
 
 .varietiesmap {
-  position: fixed;
-  right: 5%;
-  bottom: 20%;
+  position: absolute;
+    right: -20%;
+    bottom: 20%;
   }
 
 label {
@@ -244,21 +246,6 @@ label {
   transition: 1s;
 }
 
-.recordings, .lexicals {
-  width: 93%;
-}
-
 .st13 {
  pointer-events: none;
-}
-
-@media only screen and (max-width: 768px) {
-  .btn12 {
-    position: relative !important;
-top: 0%;
-left: 0%;}
-
-.recordings {
-      width: 80% !important;
-}
 }

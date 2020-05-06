@@ -17,56 +17,67 @@
         <link rel="stylesheet" href="./css/button.css">
     </head>
     <body>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-faded">
+        <!--<nav class="navbar navbar-expand-lg navbar-dark bg-faded">
             <button class="navbar-toggler navbar-toggler-right" type="button"
                     data-toggle="collapse" data-target="#MyNav" aria-controls="myNav" aria-expanded="false">
                     <span class="navbar-toggler-icon"></span>
             </button>
 
             <div class="collapse navbar-collapse mr-auto" id="MyNav">
-              <span style="position: fixed; top: 2%; right: 0%;">
-                    <span class="assam text-xs-left mr-2" style="display: none;">
-                      <svg xmlns="http://www.w3.org/2000/svg" id="info" data-trigger="focus" width="30" height="30" fill="white" viewBox="0 0 40 40"><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><path d="M20,0A20,20,0,1,0,40,20,20,20,0,0,0,20,0ZM17.69,28.63V19.48a2.31,2.31,0,1,1,4.62,0v9.15a2.31,2.31,0,0,1-4.62,0Zm2.31-14a2.78,2.78,0,1,1,2.77-2.77h0A2.77,2.77,0,0,1,20,14.65Z"/></g></g></svg>
-                    </span>
-
-                    <span class="assam text-xs-left mr-3" style="display: none;">
-                      <svg xmlns="http://www.w3.org/2000/svg" tabindex="0" data-trigger="focus" id="gear" width="30" height="30" fill="white" viewBox="0 0 40 40.83"><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><path d="M20,13.1a7.28,7.28,0,1,0,7.28,7.28A7.29,7.29,0,0,0,20,13.1Zm0,11.64a4.37,4.37,0,1,1,4.37-4.36A4.37,4.37,0,0,1,20,24.74Zm15.87-2.25a14.09,14.09,0,0,0,0-4.3l3.86-3.34a.76.76,0,0,0,.14-.95L35.47,6.33A.68.68,0,0,0,34.59,6l-4.8,1.6a16,16,0,0,0-3.71-2.11l-1-4.95A.71.71,0,0,0,24.33,0H15.6a.71.71,0,0,0-.73.58l-1,5a15.76,15.76,0,0,0-3.71,2.11l-4.8-1.6a.71.71,0,0,0-.88.29L.1,14a.79.79,0,0,0,.14.95L4.1,18.27a14,14,0,0,0,0,4.29L.31,25.91a.74.74,0,0,0-.14.94l4.36,7.57a.68.68,0,0,0,.88.29l4.8-1.6a15.61,15.61,0,0,0,3.71,2.11l1,5a.71.71,0,0,0,.73.58H24.4a.71.71,0,0,0,.73-.58l1-5a15.41,15.41,0,0,0,3.71-2.11l4.8,1.6a.7.7,0,0,0,.88-.29l4.36-7.57a.77.77,0,0,0-.14-.94ZM20,29.11a8.74,8.74,0,1,1,8.74-8.73A8.76,8.76,0,0,1,20,29.11Z"/></g></g></svg>
-                    </span>
-              </span>
           </div>
-        </nav>
+        </nav> -->
 
-          <div class="container d-flex h-100 vertical-center" style="position: static;">
-            <div class="row h-100 align-self-center" id="intro">
-              <div class="col-lg-11 my-auto">
+          <div class="container d-flex h-100" style="position: static;">
+            <div class="row h-100 align-self-center vertical-center" id="intro">
+              <div class="col-md-12 my-auto">
                 <div class="header-content mx-auto">
-                  <h1 class="mb-5" style="width: 65rem; word-wrap: break-word;}">Ishān Dhvani - A brief inquiry into the Assamese language <br> </h1>
-                     <p style="font-size: 16px;"> As my first semester thesis project, <b>Ishān Dhvani</b> aims to represent the various dialects, demographics, and recordings of the Assamese language in a.
+                  <h1>Ishān Dhvani</h1>
+                  <h4>a brief inquiry into the Assamese language</h4>
+                  <hr class="my-4" style="border-color: #FFFFFF">
+                     <p class="mt-2" style="font-size: 16px;"> As my first Semester Thesis Project, I have created <b>Ishān Dhvani</b>, which aims to represent the various dialects, demographics, and recordings of the Assamese language in a medium.
                      This has been achieved by collecting speech data from native speakers of Assamese from various geographical locations in Assam.</p> <br> <br>
                   <button class="btn btn-outliner btn-xl js-scroll-trigger" id="start">GET STARTED</button>
               </div>
             </div>
           </div>
+        </div>
 
 
 
-          <div class="assam text-center" style="display: none; position: relative;">
-           <span class="btn-group" id="buttongroup">
-            <button class="btn threebtn btn-outliner btn-xl js-scroll-trigger" id="varietiesbtn" style="padding: 0.6rem 2.75rem;">IDENTIFY</button>
-            <button class="btn threebtn btn-outliner btn-xl js-scroll-trigger active" id="recordingsbtn" style="padding: 0.6rem 2.75rem;">LISTEN</button>
-            <button class="btn threebtn btn-outliner btn-xl js-scroll-trigger" id="lexicalsbtn" style="padding: 0.6rem 2.75rem;">CLASSIFY</button>
-          </span>
+          <div class="container assam mt-3" style="display: none;">
+            <div class="row">
+
+              <div class="col-md-4">
+                <span class="btn-group" id="buttongroup">
+                  <button class="btn threebtn btn-outliner btn-xl" id="varietiesbtn" style="padding: 0.6rem 2.75rem;">DIALECTS</button>
+                  <button class="btn threebtn btn-outliner btn-xl active" id="recordingsbtn" style="padding: 0.6rem 2.75rem;">LISTEN</button>
+                  <button class="btn threebtn btn-outliner btn-xl" id="lexicalsbtn" style="padding: 0.6rem 2.75rem;">WORDS</button>
+                </span>
+              </div>
+
+              <div class="col-md-4" style="position: fixed; top: 2%; right: -27%;">
+                      <span class="assam mr-2" style="display: none;">
+                        <svg xmlns="http://www.w3.org/2000/svg" id="info" data-trigger="focus" width="30" height="30" fill="white" viewBox="0 0 40 40"><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><path d="M20,0A20,20,0,1,0,40,20,20,20,0,0,0,20,0ZM17.69,28.63V19.48a2.31,2.31,0,1,1,4.62,0v9.15a2.31,2.31,0,0,1-4.62,0Zm2.31-14a2.78,2.78,0,1,1,2.77-2.77h0A2.77,2.77,0,0,1,20,14.65Z"/></g></g></svg>
+                      </span>
+
+                      <span class="assam mr-3" style="display: none;">
+                        <svg xmlns="http://www.w3.org/2000/svg" tabindex="0" data-trigger="focus" id="gear" width="30" height="30" fill="white" viewBox="0 0 40 40.83"><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><path d="M20,13.1a7.28,7.28,0,1,0,7.28,7.28A7.29,7.29,0,0,0,20,13.1Zm0,11.64a4.37,4.37,0,1,1,4.37-4.36A4.37,4.37,0,0,1,20,24.74Zm15.87-2.25a14.09,14.09,0,0,0,0-4.3l3.86-3.34a.76.76,0,0,0,.14-.95L35.47,6.33A.68.68,0,0,0,34.59,6l-4.8,1.6a16,16,0,0,0-3.71-2.11l-1-4.95A.71.71,0,0,0,24.33,0H15.6a.71.71,0,0,0-.73.58l-1,5a15.76,15.76,0,0,0-3.71,2.11l-4.8-1.6a.71.71,0,0,0-.88.29L.1,14a.79.79,0,0,0,.14.95L4.1,18.27a14,14,0,0,0,0,4.29L.31,25.91a.74.74,0,0,0-.14.94l4.36,7.57a.68.68,0,0,0,.88.29l4.8-1.6a15.61,15.61,0,0,0,3.71,2.11l1,5a.71.71,0,0,0,.73.58H24.4a.71.71,0,0,0,.73-.58l1-5a15.41,15.41,0,0,0,3.71-2.11l4.8,1.6a.7.7,0,0,0,.88-.29l4.36-7.57a.77.77,0,0,0-.14-.94ZM20,29.11a8.74,8.74,0,1,1,8.74-8.73A8.76,8.76,0,0,1,20,29.11Z"/></g></g></svg>
+                      </span>
+              </div>
+
+            </div>
           </div>
 
-          <div class="assam text-left" style="display: none; position: absolute; top: 10%; left: 5%;">
-            <h1 class="mb-3" id="head1">Welcome<br></h1>
-            <p style="font-size: 16px; width: 50rem; word-wrap: break-word;}" id="desc1"> We have compiled audio recordings from 60 people across Assam, from west to east, in a search of the different dialects of the Assamese language. <br><br>To start listening to recordings of various speakers, click on a district.</p> <br>
+          <div class="container assam mt-4" style="display: none;">
+            <div class="row">
+              <div class="col-md-12 float-left">
+                <h1 class="mb-3" id="head1">Welcome<br></h1>
+                <p style="font-size: 16px;" id="desc1">We have compiled audio recordings from 60 people across Assam, from west to east, in a search of the different dialects of the Assamese language. <br>To start listening to recordings of various speakers, click on a district.</p>
+              </div>
+            </div>
           </div>
 
-      <div class="container vertical-center varieties main" style="display: none;">
-
-        <?xml version="1.0" encoding="utf-8"?>
-        <!-- Generator: Adobe Illustrator 24.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+      <div class="container-fluid varieties main col-md-7" style="display: none;">
         <svg version="1.1" id="VarietiesOutline" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
         	 y="0px" viewBox="0 0 938 688" style="enable-background:new 0 0 938 688;" xml:space="preserve">
         <style type="text/css">
@@ -1310,12 +1321,12 @@
         </svg>
 
         <span>
-          <img src="./" class="varietiesmap" style="display: none; width: 26%;"> </img>
+          <img src="./" class="varietiesmap" style="display: none; width: 37%;"> </img>
         </span>
 
       </div>
 
-      <div class="container assam vertical-center recordings main" style="display: none; width: 93%;">
+      <div class="container-fluid assam recordings main col-md-7" style="display: none;">
 
         <svg version="1.1" id="Assam" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
         	 viewBox="0 0 1344.8 934.2" style="enable-background:new 0 0 1344.8 934.2;" xml:space="preserve">
@@ -1932,10 +1943,15 @@
         </svg>
         </div>
 
-      <div class="container vertical-center lexicals main" style="display: none; width: 93%;">
+      <div class="container-fluid lexicals main" style="display: none;">
 
-        <div class="text-center container">
+        <div class="row justify-content-center">
 
+          <div class="col-md-1 d-none d-md-block" style="position: absolute; margin-top: 5%; margin-left: -40%;">
+              <img src="./css/Scale.svg" class="lexicalscale" width="50%"> </img>
+          </div>
+
+          <div class="col-md-7">
           <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
              viewBox="0 0 1344.8 934.2" style="enable-background:new 0 0 1344.8 934.2;" xml:space="preserve">
           <style type="text/css">
@@ -2530,13 +2546,10 @@
             		V385.6z"/>
             </g>
           </svg>
+        </div>
 
-          <span style="top: 35%; left: 4%; width: 3.5%; position: fixed;">
-            <img src="./css/Scale.svg" class="lexicalscale" style="display: none;"> </img>
-          </span>
-
-          <span class="btn12">
-            <h4>TERMS</h4>
+        <div class="col-md-1" style="position: absolute; margin-top: 20%; margin-left: 20%;">
+            <h4 class="text-center">TERMS</h4>
           <span class="btn-group">
              <button class="btn btngrid btn-outliner btn-xl js-scroll-trigger" id="korahi">KORAHI<br><p>(basket)</p></button>
              <button class="btn btngrid btn-outliner btn-xl js-scroll-trigger" id="narzi">NARZI<br><p>(marigold)</p></button>
@@ -2553,24 +2566,22 @@
              <button class="btn btngrid btn-outliner btn-xl js-scroll-trigger" id="kur">KUR<br><p>(spade)</p></button>
              <button class="btn btngrid btn-outliner btn-xl js-scroll-trigger" id="kuwa">KUWA<br><p>(well)</p></button>
              <button class="btn btngrid btn-outliner btn-xl js-scroll-trigger" id="tita">TITA<br><p>(wet)</p></button>  </span>
-         </span>
         </div>
 
-      </div>
+           <!-- <span class="lexicals btn-group" style="display: none; width:auto;">
+            <button class="btn threebtn btn-outliner btn-xl js-scroll-trigger active" id="graduated">GRADUATED DISTRIBUTION</button>
+            <button class="btn threebtn btn-outliner btn-xl js-scroll-trigger" id="terms">LEXICAL TERMS</button>
+          </span> <br> <br> -->
 
-</div>
+        </div>
+        </div>
 
       <footer class="assam footer" style="display: none;">
-        <!-- <span class="lexicals btn-group" style="display: none; width:auto;">
-         <button class="btn threebtn btn-outliner btn-xl js-scroll-trigger active" id="graduated">GRADUATED DISTRIBUTION</button>
-         <button class="btn threebtn btn-outliner btn-xl js-scroll-trigger" id="terms">LEXICAL TERMS</button>
-       </span> <br> <br> -->
-<div class="container">
-  <span class="text-muted" id="footercontent">This map is not scalable.</span>
-</div>
-</footer>
 
-
+        <div class="container">
+          <span class="text-muted" id="footercontent">This map is not for scale.</span>
+        </div>
+      </footer>
 
       <!-- Modal -->
       <div class="modal fade" id="district">
