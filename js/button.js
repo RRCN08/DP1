@@ -153,9 +153,5 @@ $(document).ready(function() {
         html: true
       });
 
-      if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-       $('#footercontent').text("This map is not scalable. Not optimized for mobile devices.");
-}
-
 
   });
