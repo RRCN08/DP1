@@ -256,7 +256,12 @@ label {
 }
 
 #intro {
-  z-index: 1;
+      background-image: url("./bg1.svg");
+      background-attachment: fixed;
+      background-position: 130%;
+      background-color: #191919;
+      background-repeat: no-repeat;
+      background-size: contain;
 }
 
 @media only screen and (max-width: 1400px) {
