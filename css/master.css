@@ -73,7 +73,7 @@ h1, h2, h3, h4 {
 }
 
 .vertical-center {
-  min-height: 100vh; /* These two lines are counted as one :-)       */
+  min-height: 100vh;
   display: flex;
   align-items: center;
 }
@@ -259,7 +259,14 @@ label {
   z-index: 1;
 }
 
+@media only screen and (max-width: 1400px) {
+  #termsbtn {top: 60%; right: 30%;}
+}
+
 @media only screen and (max-width: 991px) {
-  #termsbtn { position: relative; top: 0%; right: 0%; margin-top: 5%;}
   .varietiesmap { position: relative; right: 0%; bottom: 0%; margin-top: 5%; width: auto;}
+}
+
+@media only screen and (max-width: 767px) {
+  #termsbtn { position: relative; top: 0%; right: 0%; margin-top: 5%;}
 }
