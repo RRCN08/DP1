@@ -126,7 +126,7 @@ $(document).ready(function() {
           }).fadeIn();
 
         $("#desc1").fadeOut(function() {
-          $(this).html("We have compiled audio recordings from 60 people across Assam, from west to east, in a search of the different dialects of the Assamese language.  To start listening to recordings of various speakers, click on a district.")
+          $(this).html("To find out the variation of words amongst the different dialects, native terms for 12 items were elicited from the speakers. These terms are arranged in the map.  To see the distribution, click on a term below.")
           }).fadeIn();
       });
 
