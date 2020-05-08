@@ -264,8 +264,12 @@ label {
       background-size: contain;
 }
 
-@media only screen and (max-width: 1400px) {
+@media only screen and (max-width: 1450px) {
   #termsbtn {top: 60%; right: 30%;}
+}
+
+@media only screen and (max-width: 1200px) {
+  #termsbtn {top: 60%; right: 36%;}
 }
 
 @media only screen and (max-width: 991px) {

@@ -19,6 +19,16 @@ function BrahmaToggle() {
 
 $(document).ready(function() {
 
+      $('.navbar-toggler-icon').on('click',function(){
+
+        if ( $(".navbar-collapse").hasClass( "show" ) )
+        {$('.navbar-brand').fadeIn(1000);}
+
+        else
+        {$('.navbar-brand').fadeOut(100);}
+
+      });
+
       $('#start').on('click',function(){
         $('#intro').fadeOut('slow', function(){
         $('#intro').attr("style", "display: none;");
