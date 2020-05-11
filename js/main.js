@@ -34,6 +34,8 @@ $(document).ready(function() {
         $('#intro').attr("style", "display: none;");
         $('.assam').fadeIn('slow');
         $('.recordings').fadeIn('slow');
+        $("#head1").text("Welcome");
+        $("#desc1").html("We have compiled audio recordings from 60 people across Assam, from west to east, in a search of the different dialects of the Assamese language. To start listening to recordings of various speakers, click on a district.");
         });
       });
 
@@ -46,9 +48,9 @@ $(document).ready(function() {
         $("#lexicalsbtn").removeClass("active");
         $("#varietiesbtn").removeClass("active");
 
-        $("#head1").text("Welcome");
-
-        $("#desc1").html("We have compiled audio recordings from 60 people across Assam, from west to east, in a search of the different dialects of the Assamese language. <br>To start listening to recordings of various speakers, click on a district.");
+        $('.btn').removeClass("btn-outlineg");
+        $('.btn').removeClass("btn-outlineb");
+        $('.btn').addClass("btn-outliner");
       });
 
       $('#varietiesbtn').on('click',function(){
@@ -72,11 +74,11 @@ $(document).ready(function() {
         $('.btn').addClass("btn-outlineb");
 
         $("#head1").fadeOut(function() {
-          $(this).text("Dialect Map")
+          $(this).text("Dialect Map");
           }).fadeIn();
 
         $("#desc1").fadeOut(function() {
-          $(this).html("Although Assamese can be divided mainly into 3 kinds - Western, Eastern, and Central, our respondents have identified as much as 10 different varieties. We also asked them how proud of they are of their language. Hover on a region to see what we found.")
+          $(this).html("Although Assamese can be divided mainly into 3 kinds - Western, Eastern, and Central, our respondents have identified as much as 10 different varieties. We also asked them how proud they are of their language. Hover on a region to see what we found.");
           }).fadeIn();
 
       });
@@ -102,11 +104,11 @@ $(document).ready(function() {
         $('.btn').addClass("btn-outliner");
 
         $("#head1").fadeOut(function() {
-          $(this).html("Welcome<br>")
+          $(this).html("Welcome<br>");
           }).fadeIn();
 
         $("#desc1").fadeOut(function() {
-          $(this).html("We have compiled audio recordings from 60 people across Assam, from west to east, in a search of the different dialects of the Assamese language. <br>To start listening to recordings of various speakers, click on a district.</p>")
+          $(this).html("We have compiled audio recordings from 60 people across Assam, from west to east, in a search of the different dialects of the Assamese language.  To start listening to recordings of various speakers, click on a district.</p>");
           }).fadeIn();
       });
 
@@ -132,11 +134,11 @@ $(document).ready(function() {
         $('.btn').addClass("btn-outlineg");
 
         $("#head1").fadeOut(function() {
-          $(this).html("Word Distribution<br>")
+          $(this).html("Word Distribution<br>");
           }).fadeIn();
 
         $("#desc1").fadeOut(function() {
-          $(this).html("To find out the variation of words amongst the different dialects, native terms for 12 items were elicited from the speakers. These terms are arranged in the map.  To see the distribution, click on a term below.")
+          $(this).html("Every language has synonyms, but there usually is one term which is used more in comparison to others. To find out this variation of usage of words across the state, native terms for 12 items were elicited from the speakers.  To see the distribution, click on a term below.");
           }).fadeIn();
       });
 
